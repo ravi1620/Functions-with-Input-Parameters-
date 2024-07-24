@@ -56,7 +56,7 @@ result="Passed"
 
   let inputonChange=(inputRef,resultRef)=>{
     inputRef.current.style.backgroundColor = "pink";
-    inputRef.current.style.Color = "black";
+    inputRef.current.style.color = "black";
     if (
       inputRef.current.value >= 0 &&
       inputRef.current.value <= 100
