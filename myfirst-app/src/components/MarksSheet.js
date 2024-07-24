@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import Operators from "./Operators";
+
 
 function MarksSheet() {
   let firstNameInputRef = useRef();
