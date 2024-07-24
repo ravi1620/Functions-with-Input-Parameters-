@@ -12,10 +12,15 @@
 .label{
   display: inline-block;
   width: 150px;
-  margin: 15px;
+  margin: 10px;
+  text-align:left;
  
 }
 .div{
   display: inline-block;
   margin: 10px;
+}
+.span{
+  margin: 15px;
+
 }
