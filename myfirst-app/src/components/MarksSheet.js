@@ -34,8 +34,8 @@ function MarksSheet() {
     let totalMarks=(telMarks+hindiMarks+engMarks+mathsMarks+sciMarks+socMarks);
 
     let result;
-
-    if(telMarks<35|| hindiMarks<35|| engMarks<35|| mathsMarks<35|| sciMarks<35|| socMarks<35){
+    let passMarks=35;
+    if(telMarks<passMarks || hindiMarks<passMarks|| engMarks<passMarks|| mathsMarks<passMarks|| sciMarks<passMarks|| socMarks<passMarks){
 result="Failed"
     }else{
 result="Passed"
@@ -99,7 +99,7 @@ result="Passed"
             onChange={() => firstNameonChange()}
             onBlur={() => inputonBlur(firstNameInputRef)}
           />
-          <span ref={firstNameResultRef}></span>
+          <span ref={firstNameResultRef} className="span"></span>
         </div>
         <div>
           <label className="label">Last Name</label>
@@ -110,7 +110,7 @@ result="Passed"
             onChange={() => lastNameonChange()}
             onBlur={() => inputonBlur(lastNameInputRef)}
           />
-          <span ref={lastNameResultRef}></span>
+          <span ref={lastNameResultRef} className="span"></span>
         </div>
         <div>
           <label className="label">Telugu</label>
@@ -121,7 +121,7 @@ result="Passed"
             onChange={() => inputonChange(telInputRef, telResultRef)}
             onBlur={() => inputonBlur(telInputRef)}
           />
-          <span ref={telResultRef}></span>
+          <span ref={telResultRef} className="span"></span>
         </div>
         <div>
           <label className="label">Hindi</label>
@@ -132,7 +132,7 @@ result="Passed"
             onChange={() => inputonChange(hindiInputRef, hindiResultRef)}
             onBlur={() => inputonBlur(hindiInputRef)}
           />
-          <span ref={hindiResultRef}></span>
+          <span ref={hindiResultRef} className="span"></span>
         </div>
         <div>
           <label className="label">English</label>
@@ -143,7 +143,7 @@ result="Passed"
             onChange={() => inputonChange(engInputRef, engResultRef)}
             onBlur={() => inputonBlur(engInputRef)}
           />
-          <span ref={engResultRef}></span>
+          <span ref={engResultRef} className="span"></span>
         </div>
         <div>
           <label className="label">Maths</label>
@@ -154,7 +154,7 @@ result="Passed"
             onChange={() => inputonChange(mathsInputRef, mathsResultRef)}
             onBlur={() => inputonBlur(mathsInputRef)}
           />
-          <span ref={mathsResultRef}></span>
+          <span ref={mathsResultRef} className="span"></span>
         </div>
         <div>
           <label className="label">Science</label>
@@ -165,7 +165,7 @@ result="Passed"
             onChange={() => inputonChange(sciInputRef, sciResultRef)}
             onBlur={() => inputonBlur(sciInputRef)}
           />
-          <span ref={sciResultRef}></span>
+          <span ref={sciResultRef} className="span"></span>
         </div>
         <div>
           <label className="label">Social</label>
@@ -176,7 +176,7 @@ result="Passed"
             onChange={() => inputonChange(socInputRef, socResultRef)}
             onBlur={() => inputonBlur(socInputRef)}
           />
-          <span ref={socResultRef}></span>
+          <span ref={socResultRef} className="span"></span>
         </div>
 
         <button type="button" onClick={() => calculate()}>
